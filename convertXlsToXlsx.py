@@ -31,7 +31,7 @@ try:
             cell_obj = xl_sheet.cell(row_idx, col_idx)  # Get cell object by row, col
             print ('Column: [%s] cell_obj: [%s]' % (col_idx, cell_obj))
             ws.cell(row=row_idx+1, column=col_idx+1).value =cell_obj.value
-    f = 'c:\\OM\\output-' + str(uuid.uuid4())+'.xlsx'
+    f = 'c:\\OM\\output-xlsx' + str(uuid.uuid4())+'.xlsx'
     wbb.save(filename=f)
 except:
     print('corupted file')
